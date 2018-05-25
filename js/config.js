@@ -4,7 +4,7 @@
 
 //console.log('loading动画已关闭，请完成后再打开，在config.js中注释相应功能');
 
-onLoaded();//开发期打开
+//onLoaded();//开发期打开
 
 load(ready,onLoaded); //完成后打开
 

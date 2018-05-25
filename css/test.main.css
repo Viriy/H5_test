@@ -1,0 +1,12 @@
+.page1{background:#222}
+.page2{background:#0f3764}
+.page3{background:#222}
+.page4{background:#0f3764}
+
+.swiper_outer{color: #fff}
+
+/*底部箭头动画*/
+.arrow_down{top: inherit;bottom:.4rem;width: .56rem;height: .4rem;margin-top:0;right: 50%;margin-right: -.28rem;background:url('../images/down.png') 50% no-repeat;background-size:cover;z-index:99999;-moz-animation:upanim 1s infinite ease-in-out alternate;-webkit-animation:upanim 1s infinite ease-in-out alternate;-o-animation:upanim 1s infinite ease-in-out alternate;animation:upanim 1s infinite ease-in-out alternate}
+@-moz-keyframes upanim {0% {-moz-transform:translateY(0)}100% {-moz-transform:translateY(10px)}}
+@-webkit-keyframes upanim {0% {-webkit-transform:translateY(0)}100% {-webkit-transform:translateY(10px)}}
+@keyframes upanim {0% {transform:translateY(0)}100% {transform:translateY(10px)}}
