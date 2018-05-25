@@ -7,7 +7,13 @@ table{border-collapse:collapse;border-spacing:0}
 fieldset,img{border:0}
 ul,ol,li{list-style:none}
 input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
-a,a:link,a:visited{text-decoration: none} 
+a,a:link,a:visited{text-decoration: none}
+
+/*音乐控制*/
+#music{position:fixed;z-index:300; top:0.44rem;right:0.44rem}
+#music #audio-btn{width:0.72rem;height:0.72rem}
+#music .on{background:url('../images/music_on.png') no-repeat 0 0;background-size:cover;-webkit-animation:rotating 1.2s linear infinite;animation:rotating 1.2s linear infinite}
+#music .off{background:url('../images/music_off.png') no-repeat 0 0;background-size:cover}
 
 
 /*animated*/
@@ -21,6 +27,28 @@ a,a:link,a:visited{text-decoration: none}
 
 .cover{height:100%;width:100%;position:fixed;background-color:#000;z-index:998;display:none;}.cover .iphone{width:2.9rem;height:4.36rem;position:absolute;left:50%;top:40%;margin-top:-2.18rem;margin-left:-1.45rem;background:url(../images/phone.png) no-repeat;background-size:100% 100%;animation:zhuan 1.5s .3s infinite;-webkit-animation:zhuan 1.5s .3s infinite}.cover p{position:absolute;top:65%;left:0;text-align:center;width:100%;color:#fff;font-size:.5rem;line-height:1.5}@keyframes zhuan{0%{transform:rotate(-90deg)}50%{transform:rotate(0)}100%{transform:rotate(-90deg)}}@-webkit-keyframes zhuan{0%{-webkit-transform:rotate(-90deg)}50%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(-90deg)}}
 @media screen and (orientation:landscape){.cover{display:block}}
+
+.ui-loading {
+    text-indent: -10000px;
+    background: url(./images/ui-loading.png) 0 0 no-repeat;
+    -webkit-background-size: 40px 40px;
+    -webkit-animation-name: ui-loading-anim2;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-background-size: 40px 40px;
+    -moz-animation-name: ui-loading-anim2;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    background-size: 40px 40px;
+    animation-name: ui-loading-anim2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
 .swiper-container{width:100%;height:100%}
 .swiper-slide{width: 100%;height: 100%;background:none;overflow:hidden;-webkit-touch-callout: none; -webkit-user-select: none}

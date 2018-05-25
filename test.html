@@ -30,16 +30,24 @@
 </head>
 
 <body>
+	<div id="toploader">
+		<div class="ui-loading"></div>
+		<div class="ui-loading ui-loading2"></div>
+		<div class="loadingtext">加载中</div>
+	</div>
 	<div class="cover"> 
 		<div class="iphone Rotate"></div> 
 		<p>为了更好的用户体验，请将屏幕竖向浏览！</p> 
+	</div>
+	<div id="music"> 
+		<div id="audio-btn" class="on" onclick="playmusic.changeClass(this,'media')"> <audio loop="" src="music/Abbott_MUSIC ONLY_cut0419.mp3" id="media" preload="preload"></audio></div> 
 	</div>
 	
 	<div class="swiper-container swiper-container-v swiper_outer"> 
 		<div class="swiper-wrapper"> 
 
 			<div class="swiper-slide page1" data-hash="slide1"> 
-				1
+				<img src="images/w_p1w1.png" class="ani w_p1w1" data-ani="slideInRight 0.5s 0s both" style="-webkit-animation:slideInRight 0.5s 0s both;animation:slideInRight 0.5s 0s both;-moz-animation:slideInRight 0.5s 0s both;-ms-animation:slideInRight 0.5s 0s both;-o-animation:slideInRight 0.5s 0s both;visibility: visible;">
 			</div> 
 
 			<!--p2-->
@@ -70,6 +78,7 @@
 
 	</div>
 	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
 	<script src="js/test.swiper.min.js"></script>
 	<script src="js/test.config.js"></script>
 </body>
